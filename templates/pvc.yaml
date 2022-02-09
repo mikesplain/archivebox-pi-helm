@@ -3,11 +3,11 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: archivebox-pvc
+  name: archivebox
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
       storage: {{ .Values.storage.request }}
-  storageClassName: local-storage
+  storageClassName: nfs
