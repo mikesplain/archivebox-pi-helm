@@ -57,7 +57,7 @@ spec:
       volumes:
         - name: archivebox-data
           persistentVolumeClaim:
-            claimName: archivebox-pvc
+            claimName: archivebox
         - name: archivebox-init
           configMap:
             name: archivebox-init-cm
