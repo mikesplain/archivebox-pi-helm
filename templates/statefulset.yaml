@@ -53,8 +53,7 @@ spec:
           mountPath: /createsuperuser.sh
           subPath: createsuperuser.sh
         resources:
-          {{ .Values.archivebox.resources | indent 10 }}
-
+          {{- toYaml .Values.resources | nindent 10 }}
       volumes:
         - name: archivebox-data
           persistentVolumeClaim:
