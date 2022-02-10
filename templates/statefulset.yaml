@@ -42,6 +42,8 @@ spec:
           value: "*"
         - name: MEDIA_MAX_SIZE
           value: {{ .Values.archivebox.media_max_size }}
+        - name: COOKIES_FILE
+          value: {{ .Values.archivebox.cookies_file }}
         ports:
         - containerPort: {{ .Values.archivebox.port }}
           protocol: TCP
