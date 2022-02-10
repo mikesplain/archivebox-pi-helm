@@ -16,4 +16,5 @@ image: archivebox/archivebox:sha-efebd8e@sha256:81ceacc49ef49f3210a5378907d77227
 archivebox:
   port: 8080
   media_max_size: "750m"
+  resources: []
 
