@@ -56,6 +56,9 @@ spec:
           subPath: createsuperuser.sh
         resources:
           {{- toYaml .Values.resources | nindent 10 }}
+
+      nodeSelector:
+        {{- toYaml .Values.nodeSelector | nindent 8 }}
       volumes:
         - name: archivebox-data
           persistentVolumeClaim:
